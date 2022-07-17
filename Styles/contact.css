@@ -1,0 +1,187 @@
+.contact-main {
+  background: rgba(0,0,0,0.7) url("../Images/1658072690572.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-blend-mode:darken;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.main-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+}
+
+.main-content h1 {
+  font-size: 4.5rem;
+}
+
+.main-content p {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.main-content a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.main-content a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: dimgray;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: 0.2s ease-in-out;
+}
+
+.main-content a:hover::before {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 600px) {
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+}
+
+.contact-form {
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-form form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form form input {
+  height: 40px;
+  padding: 5px 10px;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.contact-form form textarea {
+  padding: 5px 10px;
+  outline: none;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  outline: 1px solid royalblue;
+}
+
+.contact-form form button {
+  background-color: royalblue;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin: 5px 0;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-form form button:hover {
+  background-color: darkblue;
+}
+
+.signin {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: dimgray;
+  width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  color: #fff;
+  margin-top: 13rem;
+}
+
+.signin h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.signin form {
+  margin-top: 1rem;
+}
+
+.signin .form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.signin .form-item:nth-child(3) {
+  align-items: center;
+  flex-direction: row;
+}
+
+.signin .form-item:nth-child(3) label {
+  margin-left: 5px;
+}
+
+.signin .form-item input {
+  height: 40px;
+  padding: 5px 10px;
+  background: white;
+  outline: none;
+  border: 1px solid white;
+}
+
+.signin form button {
+  background-color: royalblue;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.signin form button:hover {
+  background-color: darkblue;
+}
+
+.companies .company-logos {
+  display: flex;
+  justify-content: space-evenly;
+  color: #666;
+  font-size: 2rem;
+  transition: 0.3s ease-in;
+  max-width: 75%;
+  margin: 0pc auto;
+  padding: 1rem 0.5rem;
+}
+
+.companies .company-logos .fa:hover {
+  color: #000;
+}
